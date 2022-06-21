@@ -27,7 +27,7 @@ const PhotoLibrary: React.FC<PhotoLibraryProps> = (props) => {
       <div className="flex flex-row flex-wrap w-full">
         {
           images.map(element =>{
-            return <img className="w-1/4 h-fit p-10" key={element} src={element} onClick={()=> props.openPhotoView(element)}/>
+            return <img className="w-1/4 h-fit p-10 hover:blur cursor-pointer" key={element} src={element} onClick={()=> props.openPhotoView(element)}/>
           })
         }
       </div>

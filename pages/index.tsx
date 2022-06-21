@@ -8,7 +8,9 @@ import PhotoLibrary from "../components/PhotoLibrary/PhotoLibrary";
 import PhotoView from "../components/PhotoView/PhotoView"
 
 const Home: NextPage = () => {
-
+  document.addEventListener('contextmenu', (event)=>{
+    event.preventDefault();
+  });
   const [activeAlbum, setActiveAlbum] = useState(assetsConfig[0].name)
   const [activeAlbumCount, setActiveAlbumCount] = useState(assetsConfig[0].count)
   const [showPhotoView, setShowPhotoView] = useState(false)

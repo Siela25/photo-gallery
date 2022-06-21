@@ -1,0 +1,4 @@
+- name: Książki
+  count: 5
+- name: Okładki
+  count: 10
